@@ -13,7 +13,7 @@ function KnowMe() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <img src="../../public/skill.png" alt="skills" className="w-[4rem] hover:rotate-[-10deg] hover:scale-[1.1] duration-300"/>
+        <img src="../../skill.png" alt="skills" className="w-[4rem] hover:rotate-[-10deg] hover:scale-[1.1] duration-300"/>
         <h1 className="text-[2rem] text-[#cdcdcd] flex items-center gap-2">
           {/* <Code size={32} className="mt-[0.1rem]" /> */}
           Technical Skills
@@ -106,7 +106,7 @@ function KnowMe() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <img src="../../public/pathway.png" alt="skills" className="w-[4rem] hover:rotate-[-10deg] hover:scale-[1.1] duration-300"/>
+        <img src="../../pathway.png" alt="skills" className="w-[4rem] hover:rotate-[-10deg] hover:scale-[1.1] duration-300"/>
         <h1 className="text-[2rem] text-[#e0dddd] flex items-center gap-2">
           {/* <NotebookPen size={32} /> */}
           My Approach
@@ -124,7 +124,7 @@ function KnowMe() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <img src="../../public/dart.png" alt="skills" className="w-[4rem] hover:rotate-[-10deg] hover:scale-[1.1] duration-300"/>
+        <img src="../../dart.png" alt="skills" className="w-[4rem] hover:rotate-[-10deg] hover:scale-[1.1] duration-300"/>
         <h1 className="text-[2rem] text-[#e0dddd] flex items-center gap-2">
           {/* <Target size={32} /> */}
           My Goals
@@ -142,7 +142,7 @@ function KnowMe() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <img src="../../public/school.png" alt="skills" className="w-[4rem] hover:rotate-[-10deg] hover:scale-[1.1] duration-300"/>
+        <img src="../../school.png" alt="skills" className="w-[4rem] hover:rotate-[-10deg] hover:scale-[1.1] duration-300"/>
         <h1 className="text-[2rem] text-[#e0dddd] flex items-center gap-2">
           {/* <University size={32} /> */}
           Educational Status

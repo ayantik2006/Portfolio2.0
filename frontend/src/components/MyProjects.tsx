@@ -15,7 +15,7 @@ function MyProjects() {
         >
           <WobbleCard className="p-[2rem] bg-[#171717] hover:bg-[#171717] flex flex-col items-start">
             <img
-              src="../../public/codehive.png"
+              src="../../codehive.png"
               alt="codehive"
               className="w-[20rem] rounded-[0.5rem] self-center"
             />
@@ -69,7 +69,7 @@ function MyProjects() {
         >
           <WobbleCard className="p-[2rem] bg-[#171717] hover:bg-[#171717] flex flex-col items-start">
             <img
-              src="../../public/confessions.png"
+              src="../../confessions.png"
               alt="codehive"
               className="w-[20rem] rounded-[0.5rem] self-center"
             />
