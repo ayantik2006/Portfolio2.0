@@ -69,11 +69,11 @@ function MyProjects() {
           </a>
         </FollowerPointerCard>
 
-        <FollowerPointerCard title="View website">
+        <FollowerPointerCard title="View website" className="-z-40">
           <a
             href="https://nitrconfessions.fun/"
             target="_blank"
-            className="flex flex-col animate-pulse cursor-none"
+            className="flex flex-col animate-pulse cursor-none -z-20"
           >
             <WobbleCard className="p-[2rem] bg-[#171717] hover:bg-[#171717] flex flex-col items-start">
               <img
@@ -89,8 +89,7 @@ function MyProjects() {
                 Live
               </div>
               <p className="text-[1rem] text-[#c0c0c0] mt-3">
-                A real-time collaborative code editor designed to make coding,
-                sharing, and learning smoother for developers.
+                A fun website made for the students of NIT Rourkela. They can anonymously login, post their confessions and have fun! Others can react and comment on it.
               </p>
               <div className="flex flex-wrap gap-3 mt-6">
                 <div className="bg-[#2F2F2F] px-3 border-dashed border-1 rounded-[0.3rem] flex items-center gap-1">
