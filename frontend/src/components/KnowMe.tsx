@@ -7,7 +7,7 @@ function KnowMe() {
     <div className="min-h-screen bg-[radial-gradient(circle,_#000,_#0f0f10)] selection:bg-white selection:text-black flex flex-col gap-[10rem] items-center text-white scroll-smooth">
       <Navbar />
       <motion.div
-        className="flex flex-col items-center gap-2 max-w-[35rem] mt-[12rem]"
+        className="flex flex-col items-center gap-2 max-w-[35rem] mt-[12rem] mx-10 text-center"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -100,7 +100,7 @@ function KnowMe() {
       </motion.div>
 
       <motion.div
-        className="mt-[rem] flex flex-col items-center gap-6 max-w-[35rem]"
+        className="mt-[rem] flex flex-col items-center gap-6 max-w-[35rem] mx-10 text-center"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -118,7 +118,7 @@ function KnowMe() {
       </motion.div>
 
       <motion.div
-        className="mt-[rem] flex flex-col items-center gap-2 max-w-[35rem]"
+        className="mt-[rem] flex flex-col items-center gap-2 max-w-[35rem] mx-10 text-center"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -136,7 +136,7 @@ function KnowMe() {
       </motion.div>
 
       <motion.div
-        className="mt-[rem] flex flex-col items-center gap-2 max-w-[35rem] pb-[10rem]"
+        className="mt-[rem] flex flex-col items-center gap-2 max-w-[35rem] pb-[10rem] mx-10 text-center"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}

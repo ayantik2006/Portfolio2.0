@@ -1,37 +1,101 @@
-import { Link } from "react-router-dom";
+"use client";
+import {
+  Navbar,
+  NavBody,
+  NavItems,
+  MobileNav,
+  NavbarLogo,
+  NavbarButton,
+  MobileNavHeader,
+  MobileNavToggle,
+  MobileNavMenu,
+} from "@/components/ui/resizable-navbar";
+import { useState } from "react";
 
-function Navbar() {
+export default function NavbarDemo() {
+  const navItems = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "Know Me",
+      link: "/know-me",
+    },
+    {
+      name: "My Projects",
+      link: "/projects",
+    },
+    {
+      name: "Contact Me",
+      link: "/contact-me",
+    },
+    {
+      name: "Blogs",
+      link: "/blogs",
+    },
+  ];
+
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
-    <div className="fixed top-[0rem] left-1/2 transform -translate-x-1/2 z-50 flex gap-12 backdrop-blur-2xl h-[5rem] w-full justify-center items-center">
-      <Link
-        to="/"
-        className="font-semibold hover:text-[#aba7a7] cursor-pointer"
-      >
-        Home
-      </Link>
-      <Link
-        to="/know-me"
-        className="font-semibold hover:text-[#aba7a7] cursor-pointer"
-      >
-        Know Me
-      </Link>
-      <Link to="/projects">
-        <div className="font-semibold hover:text-[#aba7a7] cursor-pointer">
-          Projects
-        </div>
-      </Link>
-      <Link to="/contact-me">
-        <div className="font-semibold hover:text-[#aba7a7] cursor-pointer">
-          Contact Me
-        </div>
-      </Link>
-      <Link to="/blogs">
-        <div className="font-semibold hover:text-[#aba7a7] cursor-pointer">
-          Blogs
-        </div>
-      </Link>
+    <div className=" w-full fixed top-[4rem] z-40">
+      <Navbar>
+        {/* Desktop Navigation */}
+        <NavBody>
+          {/* <NavbarLogo /> */}
+          <NavItems items={navItems} />
+          {/* <div className="flex items-center gap-4">
+            <NavbarButton variant="secondary">Login</NavbarButton>
+            <NavbarButton variant="primary">Book a call</NavbarButton>
+          </div> */}
+        </NavBody>
+
+        {/* Mobile Navigation */}
+        <MobileNav className="z-500 text-white">
+          <MobileNavHeader>
+            {/* <NavbarLogo /> */}
+            <MobileNavToggle
+              isOpen={isMobileMenuOpen}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            />
+          </MobileNavHeader>
+
+          <MobileNavMenu
+            isOpen={isMobileMenuOpen}
+            onClose={() => setIsMobileMenuOpen(false)}
+            className="-z-50"
+          >
+            {navItems.map((item, idx) => (
+              <a
+                key={`mobile-link-${idx}`}
+                href={item.link}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="relative text-neutral-300"
+              >
+                <span className="block">{item.name}</span>
+              </a>
+            ))}
+            {/* <div className="flex w-full flex-col gap-4">
+              <NavbarButton
+                onClick={() => setIsMobileMenuOpen(false)}
+                variant="primary"
+                className="w-full"
+              >
+                Login
+              </NavbarButton>
+              <NavbarButton
+                onClick={() => setIsMobileMenuOpen(false)}
+                variant="primary"
+                className="w-full"
+              >
+                Book a call
+              </NavbarButton>
+            </div> */}
+          </MobileNavMenu>
+        </MobileNav>
+      </Navbar>
+      {/* Navbar */}
     </div>
   );
 }
-
-export default Navbar;

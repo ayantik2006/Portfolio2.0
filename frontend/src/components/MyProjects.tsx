@@ -8,7 +8,7 @@ function MyProjects() {
     <div className="min-h-screen bg-[radial-gradient(circle,_#000,_#0f0f10)] selection:bg-white selection:text-black flex flex-col gap-[10rem] items-center justify-center text-white scroll-smooth">
       <Navbar />
 
-      <div className="flex flex-col gap-4 max-w-[30rem] mt-[10rem] mb-[10rem]">
+      <div className="flex flex-col gap-4 max-w-[30rem] mt-[10rem] mb-[10rem] mx-10 z-0">
         <FollowerPointerCard title="View website">
           <a
             href="https://codehive-gths.onrender.com/"

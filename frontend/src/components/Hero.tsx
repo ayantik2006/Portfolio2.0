@@ -13,9 +13,9 @@ function Hero() {
     }, 1000);
   }, []);
   return (
-    <div className="min-h-screen text-[#e4e2e2] flex flex-col items-center justify-center gap-[4rem] bg-[radial-gradient(circle,_#000,_#0f0f10)] selection:bg-white selection:text-black scroll-smooth">
-      <Navbar />
-      <div className="flex flex-col items-center gap-2 h-fit w-fit">
+    <div className="min-h-screen text-[#e4e2e2] flex flex-col items-center justify-center gap-[4rem] bg-[radial-gradient(circle,_#000,_#0f0f10)] selection:bg-white selection:text-black scroll-smooth ">
+      <Navbar/>
+      <div className="flex flex-col items-center gap-2 h-fit w-fit ">
         <img
           src="https://api.dicebear.com/9.x/personas/svg?seed=Robert"
           alt="avatar"
@@ -24,7 +24,7 @@ function Hero() {
         <div className="font-semibold text-[#c1c0c0] text-[2rem] flex">
           <p>Hi, I am</p>&nbsp;
           <div className="font-extrabold">
-            <ColourfulText text="Ayantik" />
+            <ColourfulText text="Ayantik"/>
           </div>
         </div>
         <motion.div className="relative mx-4 my-4 flex flex-col items-center justify-center gap-4 text-center sm:mx-0 sm:mb-0 sm:flex-row font-normal text-[1rem] ">
