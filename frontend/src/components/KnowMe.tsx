@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
-import {Code, NotebookPen, Target, University} from "lucide-react";
+import { Code, NotebookPen, Target, University } from "lucide-react";
 
 function KnowMe() {
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle,_#000,_#0f0f10)] selection:bg-white selection:text-black flex flex-col gap-[10rem] items-center text-white bg-amber-300 scroll-smooth">
+    <div className="min-h-screen bg-[radial-gradient(circle,_#000,_#0f0f10)] selection:bg-white selection:text-black flex flex-col gap-[10rem] items-center text-white scroll-smooth">
       <Navbar />
       <motion.div
         className="flex flex-col items-center gap-2 max-w-[35rem] mt-[12rem]"
@@ -13,7 +13,11 @@ function KnowMe() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h1 className="text-[2rem] text-[#cdcdcd] flex items-center gap-2"><Code size={32} className="mt-[0.1rem]"/>Technical Skills</h1>
+        <img src="../../public/skill.png" alt="skills" className="w-[4rem] hover:rotate-[-10deg] hover:scale-[1.1] duration-300"/>
+        <h1 className="text-[2rem] text-[#cdcdcd] flex items-center gap-2">
+          {/* <Code size={32} className="mt-[0.1rem]" /> */}
+          Technical Skills
+        </h1>
         <div className="flex flex-wrap gap-4 mt-[2rem] font-semibold justify-center">
           <div className="bg-[#2F2F2F] px-4 py-1 rounded-[0.7rem] border-1 gap-1 border-dashed hover:-translate-y-1 duration-300">
             <a
@@ -63,7 +67,7 @@ function KnowMe() {
               href="https://expressjs.com/"
               className="flex items-center gap-1"
             >
-              <i className="devicon-express-original"></i>ExpressJS
+              <i className="devicon-express-original mt-[0.1rem]"></i>ExpressJS
             </a>
           </div>
           <div className="bg-[#2F2F2F] px-4 py-1 rounded-[0.7rem] border-1 gap-1 border-dashed hover:-translate-y-1 duration-300">
@@ -102,7 +106,11 @@ function KnowMe() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h1 className="text-[2rem] text-[#e0dddd] flex items-center gap-2"><NotebookPen size={32}/>My Approach</h1>
+        <img src="../../public/pathway.png" alt="skills" className="w-[4rem] hover:rotate-[-10deg] hover:scale-[1.1] duration-300"/>
+        <h1 className="text-[2rem] text-[#e0dddd] flex items-center gap-2">
+          {/* <NotebookPen size={32} /> */}
+          My Approach
+        </h1>
         <p className="text-[#abaaaa] text-center text-[1.1rem]">
           I believe in clean code, continuous learning, and building tools that
           make life easier for others.
@@ -116,8 +124,12 @@ function KnowMe() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h1 className="text-[2rem] text-[#e0dddd] flex items-center gap-2"><Target size={32}/>My Goals</h1>
-        <p className="text-[#abaaaa] text-center text-[1.1rem]">
+        <img src="../../public/dart.png" alt="skills" className="w-[4rem] hover:rotate-[-10deg] hover:scale-[1.1] duration-300"/>
+        <h1 className="text-[2rem] text-[#e0dddd] flex items-center gap-2">
+          {/* <Target size={32} /> */}
+          My Goals
+        </h1>
+        <p className="text-[#abaaaa] text-center text-[1.1rem] mt-[1rem]">
           Currently, I'm focused on building impactful projects and preparing to
           join top tech companies where I can grow and innovate.
         </p>
@@ -130,16 +142,18 @@ function KnowMe() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h1 className="text-[2rem] text-[#e0dddd] flex items-center gap-2"><University size={32}/>Educational Status</h1>
-        <p className="text-[#abaaaa] text-[1.1rem] text-center">
-          I am currently a 1st year undergraduate student at <br />{" "}
-          <a
-            href="https://www.nitrkl.ac.in/"
-            className="text-[#f00808] hover:translate-y-1"
-            target="_blank"
-          >
-            National Institute of Technology, Rourkela
-          </a>
+        <img src="../../public/school.png" alt="skills" className="w-[4rem] hover:rotate-[-10deg] hover:scale-[1.1] duration-300"/>
+        <h1 className="text-[2rem] text-[#e0dddd] flex items-center gap-2">
+          {/* <University size={32} /> */}
+          Educational Status
+        </h1>
+        <p className="text-[#abaaaa] text-[1.1rem] text-center mt-[0.6rem]">
+          <a href="https://nitrkl.ac.in" className="font-semibold">NIT Rourkela</a> - B.tech in Civil Engineering
+          <div className="flex gap-1 items-center justify-center mt-3">
+            <div className="text-[0.8rem] bg-[#2F2F2F] px-2 rounded-[1rem]">Aug 2025</div>
+            <div className="w-5 h-[0.06rem] bg-gray-400"></div>
+            <div className="text-[0.8rem] bg-[#2F2F2F] px-2 rounded-[1rem]">Present</div>
+          </div>
         </p>
       </motion.div>
       {/* 
