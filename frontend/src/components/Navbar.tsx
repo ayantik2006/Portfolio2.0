@@ -15,9 +15,11 @@ function Navbar() {
       >
         Know Me
       </Link>
-      <div className="font-semibold hover:text-[#aba7a7] cursor-pointer">
-        My Projects
-      </div>
+      <Link to="/projects">
+        <div className="font-semibold hover:text-[#aba7a7] cursor-pointer">
+          Projects
+        </div>
+      </Link>
       <Link to="/contact-me">
         <div className="font-semibold hover:text-[#aba7a7] cursor-pointer">
           Contact Me
