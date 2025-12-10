@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { LayoutTextFlip } from "./ui/layout-text-flip";
 import ColourfulText from "./ui/colourful-text";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 function Hero() {
   const [isTaglineShowing, setIsTaglineShowing] = useState(true);
@@ -37,11 +38,16 @@ function Hero() {
           </p>
         </motion.div>
         <div className="flex gap-6 mt-6">
-          <button className="bg-white text-black px-4 py-2 rounded-[2rem] font-bold hover:-translate-y-1 duration-300">
-            See Projects
-          </button>
+          <Link to="/projects">
+            <button className="bg-white text-black px-4 py-2 rounded-[2rem] font-bold hover:-translate-y-1 duration-300">
+              See Projects
+            </button>
+          </Link>
 
-          <a href="https://drive.google.com/file/d/1TmuYrMKZNFIZGZwdF0aLSo1ypNNkmlCT/view" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/1TmuYrMKZNFIZGZwdF0aLSo1ypNNkmlCT/view"
+            target="_blank"
+          >
             <button className="bg-transparent text-white border-2 px-4 py-2 rounded-[2rem] font-bold hover:-translate-y-1 duration-300">
               Get Resume
             </button>
