@@ -12,9 +12,9 @@ function Hero() {
     }, 1000);
   }, []);
   return (
-    <div className="h-[100vh] text-[#e4e2e2] flex items-center justify-center bg-[radial-gradient(circle,_#000,_#0f0f10)] selection:bg-white selection:text-black flex flex-col">
-      <Navbar/>
-      <motion.h1 className="flex flex-col items-center gap-2">
+    <div className="min-h-screen text-[#e4e2e2] flex flex-col items-center justify-center gap-[4rem] bg-[radial-gradient(circle,_#000,_#0f0f10)] selection:bg-white selection:text-black scroll-smooth">
+      <Navbar />
+      <div className="flex flex-col items-center gap-2 h-fit w-fit">
         <img
           src="https://api.dicebear.com/9.x/personas/svg?seed=Robert"
           alt="avatar"
@@ -26,27 +26,28 @@ function Hero() {
             <ColourfulText text="Ayantik" />
           </div>
         </div>
-        {isTaglineShowing && (
-          <motion.div className="relative mx-4 my-4 flex flex-col items-center justify-center gap-4 text-center sm:mx-0 sm:mb-0 sm:flex-row font-normal text-[1rem] ">
-            <LayoutTextFlip
-              text="I build "
-              words={["Scalable", "Efficient", "Reliable"]}
-              duration={1000}
-            />
-            <p className="text-2xl font-bold tracking-tight drop-shadow-lg md:text-4xl">
-              web apps
-            </p>
-          </motion.div>
-        )}
+        <motion.div className="relative mx-4 my-4 flex flex-col items-center justify-center gap-4 text-center sm:mx-0 sm:mb-0 sm:flex-row font-normal text-[1rem] ">
+          <LayoutTextFlip
+            text="I build "
+            words={["Scalable", "Efficient", "Reliable"]}
+            duration={1000}
+          />
+          <p className="text-2xl font-bold tracking-tight drop-shadow-lg md:text-4xl">
+            web apps
+          </p>
+        </motion.div>
         <div className="flex gap-6 mt-6">
           <button className="bg-white text-black px-4 py-2 rounded-[2rem] font-bold hover:-translate-y-1 duration-300">
             See Projects
           </button>
-          <button className="bg-transparent text-white border-2 px-4 py-2 rounded-[2rem] font-bold hover:-translate-y-1 duration-300">
-            Contact Me
-          </button>
+
+          <a href="https://drive.google.com/file/d/1TmuYrMKZNFIZGZwdF0aLSo1ypNNkmlCT/view" target="_blank">
+            <button className="bg-transparent text-white border-2 px-4 py-2 rounded-[2rem] font-bold hover:-translate-y-1 duration-300">
+              Get Resume
+            </button>
+          </a>
         </div>
-      </motion.h1>
+      </div>
     </div>
   );
 }
