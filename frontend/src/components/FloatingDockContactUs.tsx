@@ -38,7 +38,7 @@ export function FloatingDockContactUs() {
     },
   ];
   return (
-    <div className="flex items-center justify-center w-full [@media(max-width:768px)]:translate-y-[7rem]">
+    <div className="flex items-center justify-center w-full">
       <FloatingDock
         items={links} />
     </div>
