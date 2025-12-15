@@ -24,9 +24,9 @@ function MyProjects() {
               <h1 className="text-[1.2rem] font-semibold ml-[0.1rem] mt-2">
                 CodeHive
               </h1>
-              <div className="ml-[0.1rem] text-[0.8rem] bg-[#2E191A] px-2 py-1 flex items-center gap-1 rounded-[0.4rem] mt-1">
-                <div className="bg-red-700 rounded-full w-2 h-2 animate-pulse"></div>
-                Building
+              <div className="ml-[0.1rem] text-[0.8rem] bg-[#15291D] px-2 py-1 flex items-center gap-1 rounded-[0.4rem] mt-1">
+                <div className="bg-[#03B248] rounded-full w-2 h-2 animate-pulse"></div>
+                Live
               </div>
               <p className="text-[1rem] text-[#c0c0c0] mt-3">
                 A real-time collaborative code editor designed to make coding,
